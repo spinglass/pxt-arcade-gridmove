@@ -27,6 +27,14 @@ Use the ``speed`` block to set the speed for a mover
 gridmove.create(null).speed(0)
 ```
 
+### ``auto-stop``
+
+Use the ``auto-stop`` block to cause a mover to stop at the next grid square whenever a direction is not requested
+
+```sig
+gridmove.create(null).autoStop(true)
+```
+
 ## Use as Extension [![MakeCode Arcade Release](https://github.com/spinglass/pxt-arcade-gridmove/actions/workflows/makecode-release.yml/badge.svg)](https://github.com/spinglass/pxt-arcade-gridmove/actions/workflows/makecode-release.yml)
 
 This repository can be added as an **extension** in MakeCode.
