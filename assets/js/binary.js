@@ -1,4 +1,4 @@
-// meta={"simUrl":"https://trg-arcade.userpxt.io/v1.12.46/---simulator","cdnUrl":"https://pxt.azureedge.net","version":"0.1.1","target":"arcade","targetVersion":"1.12.46","repo":"spinglass/pxt-arcade-gridmove"}
+// meta={"simUrl":"https://trg-arcade.userpxt.io/v1.12.46/---simulator","cdnUrl":"https://pxt.azureedge.net","version":"0.1.2","target":"arcade","targetVersion":"1.12.46","repo":"spinglass/pxt-arcade-gridmove"}
 // total=1289404 new=8.29% cached=86.05% other=5.66%
 (function (ectx) {
 'use strict';
@@ -444,7 +444,7 @@ const pxsim_pxtrt = pxsim.pxtrt;
 const pxsim_numops = pxsim.numops;
 
 
-function _main___P18464(s) {
+function _main___P18549(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -860,13 +860,13 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-_main___P18464.info = {"start":0,"length":0,"line":0,"column":0,"endLine":0,"endColumn":0,"fileName":"test.ts","functionName":"<main>","argumentNames":[]}
-_main___P18464.continuations = [  ]
+_main___P18549.info = {"start":0,"length":0,"line":0,"column":0,"endLine":0,"endColumn":0,"fileName":"test.ts","functionName":"<main>","argumentNames":[]}
+_main___P18549.continuations = [  ]
 
-function _main___P18464_mk(s) {
+function _main___P18549_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: _main___P18464, depth: s.depth + 1,
+        parent: s, fn: _main___P18549, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -43986,5 +43986,5 @@ const sprites_BaseSpriteSayRenderer__C2259_VT = mkVTable({
 
 const breakpoints = setupDebugger(1, ["mySprite___4356","myMover___4357"])
 
-return _main___P18464
+return _main___P18549
 })
