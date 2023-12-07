@@ -9,7 +9,7 @@
 
 Use the ``create`` block to allow Grid Move to control a Sprite
 
-```block
+```blocks
 let mySprite = sprites.create(img`
     1 1 1 1
     1 . . 1
@@ -23,7 +23,7 @@ let myMover = gridmove.create(mySprite)
 
 Use the ``speed`` block to set the speed for a mover
 
-```sig
+```blocks
 gridmove.create(null).speed(0)
 ```
 
@@ -31,7 +31,7 @@ gridmove.create(null).speed(0)
 
 Use the ``auto-stop`` block to cause a mover to stop at the next grid square whenever a direction is not requested
 
-```sig
+```blocks
 gridmove.create(null).autoStop(true)
 ```
 

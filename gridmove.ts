@@ -198,6 +198,8 @@ namespace gridmove {
     //% blockId=gridmove_create
     //% group="Create"
     //% block="mover for sprite $sprite"
+    //% sprite.defl=mySprite
+    //% sprite.shadow=variables_get
     //% blockSetVariable=myMover
     export function create(sprite: Sprite): Mover {
         const mm = getMoverManager()
