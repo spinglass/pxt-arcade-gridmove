@@ -23,16 +23,8 @@ let myMover = gridmove.create(mySprite)
 
 Use the ``speed`` block to set the speed for a mover
 
-```block
-// @hide
-let mySprite = sprites.create(img`
-    .
-`, SpriteKind.Player)
-
-// @hide
-let myMover = gridmove.create(mySprite)
-
-myMover.speed(0)
+```sig
+gridmove.create(null).speed(0)
 ```
 
 ## Use as Extension [![MakeCode Arcade Release](https://github.com/spinglass/pxt-arcade-gridmove/actions/workflows/makecode-release.yml/badge.svg)](https://github.com/spinglass/pxt-arcade-gridmove/actions/workflows/makecode-release.yml)
