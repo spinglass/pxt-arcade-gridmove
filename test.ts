@@ -1,1 +1,7 @@
-// tests go here; this will not be compiled when this package is used as an extension.
+let mySprite = sprites.create(img`
+    1 1 1 1
+    1 . . 1
+    1 . . 1
+    1 1 1 1
+`, SpriteKind.Player)
+let myMover = gridmove.create(mySprite)

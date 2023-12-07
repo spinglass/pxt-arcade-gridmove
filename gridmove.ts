@@ -102,8 +102,7 @@ namespace gridmove {
 
             // Get the current tile
             this._loc = this._sprite.tilemapLocation()
-            if (!this._loc)
-            {
+            if (!this._loc) {
                 return
             }
             const tx = this._loc.x
