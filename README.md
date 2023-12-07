@@ -9,7 +9,7 @@
 
 Use the ``create`` block to allow Grid Move to control a Sprite
 
-```blocks
+```block
 let mySprite = sprites.create(img`
     1 1 1 1
     1 . . 1
@@ -17,6 +17,17 @@ let mySprite = sprites.create(img`
     1 1 1 1
 `, SpriteKind.Player)
 let myMover = gridmove.create(mySprite)
+```
+
+### ``speed``
+
+Use the ``speed`` block to set the speed for a mover
+
+```block
+// @hide
+let myMover = gridmove.create(null)
+
+myMover.speed(0)
 ```
 
 ## Use as Extension
