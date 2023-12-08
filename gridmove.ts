@@ -175,7 +175,7 @@ namespace gridmove {
         //% block="set $this speed to $speed"
         //% this.defl=myMover
         //% speed.defl=100
-        public speed(speed: number) {
+        public setSpeed(speed: number) {
             this._speed = speed
         }
 
@@ -185,7 +185,7 @@ namespace gridmove {
         //% this.defl=myMover
         //% enable.defl=true
         //% enable.shadow=toggleOnOff
-        public playerControl(enable: boolean) {
+        public setPlayerControl(enable: boolean) {
             this._playerControl = enable
         }
 

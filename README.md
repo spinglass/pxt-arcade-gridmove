@@ -19,23 +19,9 @@ let mySprite = sprites.create(img`
 let myMover = gridmove.create(mySprite)
 ```
 
-### ``player control``
+### ``setPlayerControl``
 
-Use the ``player control`` block to enable or disable control of the mover with buttons
-
-```blocks
-// @hide
-let mySprite = sprites.create(img`
-    1
-`, SpriteKind.Player)
-// @hide
-let myMover = gridmove.create(mySprite)
-myMover.playerControl(true)
-```
-
-### ``speed``
-
-Use the ``speed`` block to set the speed for a mover
+Use the ``setPlayerControl`` block to enable or disable control of the mover with buttons
 
 ```blocks
 // @hide
@@ -44,12 +30,26 @@ let mySprite = sprites.create(img`
 `, SpriteKind.Player)
 // @hide
 let myMover = gridmove.create(mySprite)
-myMover.speed(100)
+myMover.setPlayerControl(true)
 ```
 
-### ``mode``
+### ``setSpeed``
 
-Use the ``mode`` block determine how the mover behaves
+Use the ``setSpeed`` block to set the speed for a mover
+
+```blocks
+// @hide
+let mySprite = sprites.create(img`
+    1
+`, SpriteKind.Player)
+// @hide
+let myMover = gridmove.create(mySprite)
+myMover.setSpeed(100)
+```
+
+### ``setMode``
+
+Use the ``setMode`` block determine how the mover behaves
 - ``Step`` : moves one grid square at a time, unless a direction is held
 - ``Continuous`` : only stops when direction of travel is blocked
 - ``WallStop`` : like continuous, except the user can turn into a wall to stop
