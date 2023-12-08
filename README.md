@@ -64,7 +64,7 @@ let myMover = gridmove.create(mySprite)
 myMover.setMode(gridmove.Mode.Step)
 ```
 
-## Use as Extension [![MakeCode Arcade Release](https://github.com/spinglass/pxt-arcade-gridmove/actions/workflows/makecode-release.yml/badge.svg)](https://github.com/spinglass/pxt-arcade-gridmove/actions/workflows/makecode-release.yml)
+## Use as Extension ![MakeCode Arcade Release](https://github.com/spinglass/pxt-arcade-gridmove/actions/workflows/makecode-release.yml/badge.svg)
 
 This repository can be added as an **extension** in MakeCode.
 
