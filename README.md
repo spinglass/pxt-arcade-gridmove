@@ -19,6 +19,20 @@ let mySprite = sprites.create(img`
 let myMover = gridmove.create(mySprite)
 ```
 
+### ``player control``
+
+Use the ``player control`` block to enable or disable control of the mover with buttons
+
+```blocks
+// @hide
+let mySprite = sprites.create(img`
+    1
+`, SpriteKind.Player)
+// @hide
+let myMover = gridmove.create(mySprite)
+myMover.playerControl(true)
+```
+
 ### ``speed``
 
 Use the ``speed`` block to set the speed for a mover
