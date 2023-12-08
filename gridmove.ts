@@ -10,6 +10,12 @@ namespace gridmove {
         Right,
     }
 
+    export enum Mode {
+        Step,
+        WallStop,
+        Continuous,
+    }
+
     class MoverManager {
         _movers: Mover[]
 
@@ -35,8 +41,7 @@ namespace gridmove {
         _sprite: Sprite
         _speed: number
         _playerControl: boolean
-        _autoStop: boolean
-        _turnStop: boolean
+        _mode: Mode
         _request: Direction
         _x: number
         _y: number
@@ -46,14 +51,17 @@ namespace gridmove {
             this._sprite = sprite;
             this._speed = 100
             this._playerControl = false
-            this._autoStop = false
-            this._turnStop = false
+            this._mode = Mode.Step
             this._request = Direction.None
             this._x = sprite.x
             this._y = sprite.y
         }
 
         public update() {
+            if (!this._sprite) {
+                return
+            }
+            
             this.updateMovement()
             this.updatePlayerControl()
         }
@@ -80,7 +88,7 @@ namespace gridmove {
         }
 
         private canMove(direction: CollisionDirection): boolean {
-            if (this._turnStop) {
+            if (this._mode != Mode.WallStop) {
                 // Can't move in requested direction if there's a wall there
                 const neighbor = this._loc.getNeighboringLocation(direction)
                 if (neighbor) {
@@ -121,7 +129,7 @@ namespace gridmove {
                 midy = (ly > ty && y <= ty) // crossing ty
             }
 
-            const canStop = this._autoStop || (this._request == Direction.Stop)
+            const canStop = (this._mode == Mode.Step) || (this._request == Direction.Stop)
 
             // moving in x or middle of y
             if (vx != 0 || midy) {
@@ -175,24 +183,19 @@ namespace gridmove {
         //% group="Movement"
         //% block="set $this player control $enable"
         //% this.defl=myMover
-        public playerControl(enable: boolean = true) {
+        //% enable.defl=true
+        //% enable.shadow=toggleOnOff
+        public playerControl(enable: boolean) {
             this._playerControl = enable
         }
 
-        //% blockId=gridmove_set_auto_stop
+        //% blockId=gridmove_set_mode
         //% group="Movement"
-        //% block="set $this auto-stop $enable"
+        //% block="set $this mode to $mode"
         //% this.defl=myMover
-        public autoStop(enable: boolean = true) {
-            this._autoStop = enable
-        }
-
-        //% blockId=gridmove_set_turn_stop
-        //% group="Movement"
-        //% block="set $this turn-stop $enable"
-        //% this.defl=myMover
-        public turnStop(enable: boolean = true) {
-            this._turnStop = enable
+        //% mode.defl=Mode.Step
+        public setMode(mode: Mode) {
+            this._mode = mode
         }
     }
 
