@@ -166,7 +166,8 @@ namespace gridmove {
         //% group="Movement"
         //% block="set $this speed to $speed"
         //% this.defl=myMover
-        public speed(speed: number = 100) {
+        //% speed.defl=100
+        public speed(speed: number) {
             this._speed = speed
         }
 

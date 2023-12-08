@@ -24,7 +24,13 @@ let myMover = gridmove.create(mySprite)
 Use the ``speed`` block to set the speed for a mover
 
 ```blocks
-gridmove.create(null).speed(0)
+// @hide
+let mySprite = sprites.create(img`
+    1
+`, SpriteKind.Player)
+// @hide
+let myMover = gridmove.create(mySprite)
+myMover.speed(0)
 ```
 
 ### ``auto-stop``
@@ -32,7 +38,13 @@ gridmove.create(null).speed(0)
 Use the ``auto-stop`` block to cause a mover to stop at the next grid square whenever a direction is not requested
 
 ```blocks
-gridmove.create(null).autoStop(true)
+// @hide
+let mySprite = sprites.create(img`
+    1
+`, SpriteKind.Player)
+// @hide
+let myMover = gridmove.create(mySprite)
+myMover.autoStop(true)
 ```
 
 ## Use as Extension [![MakeCode Arcade Release](https://github.com/spinglass/pxt-arcade-gridmove/actions/workflows/makecode-release.yml/badge.svg)](https://github.com/spinglass/pxt-arcade-gridmove/actions/workflows/makecode-release.yml)
