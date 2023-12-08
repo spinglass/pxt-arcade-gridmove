@@ -47,7 +47,7 @@ let mySprite = sprites.create(img`
 `, SpriteKind.Player)
 // @hide
 let myMover = gridmove.create(mySprite)
-myMover.setMode(Mode.Step)
+myMover.setMode(gridmove.Mode.Step)
 ```
 
 ## Use as Extension [![MakeCode Arcade Release](https://github.com/spinglass/pxt-arcade-gridmove/actions/workflows/makecode-release.yml/badge.svg)](https://github.com/spinglass/pxt-arcade-gridmove/actions/workflows/makecode-release.yml)
