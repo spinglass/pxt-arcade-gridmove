@@ -30,7 +30,7 @@ let mySprite = sprites.create(img`
 `, SpriteKind.Player)
 // @hide
 let myMover = gridmove.create(mySprite)
-myMover.speed(0)
+myMover.speed(100)
 ```
 
 ### ``mode``

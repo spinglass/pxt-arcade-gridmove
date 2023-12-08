@@ -53,8 +53,8 @@ namespace gridmove {
             this._playerControl = false
             this._mode = Mode.Step
             this._request = Direction.None
-            this._x = sprite.x
-            this._y = sprite.y
+            this._x = sprite ? sprite.x : 0
+            this._y = sprite ? sprite.y : 0
         }
 
         public update() {
