@@ -33,9 +33,12 @@ let myMover = gridmove.create(mySprite)
 myMover.speed(0)
 ```
 
-### ``auto-stop``
+### ``mode``
 
-Use the ``auto-stop`` block to cause a mover to stop at the next grid square whenever a direction is not requested
+Use the ``mode`` block determine how the mover behaves
+- ``Step`` : moves one grid square at a time, unless a direction is held
+- ``Continuous`` : only stops when direction of travel is blocked
+- ``WallStop`` : like continuous, except the user can turn into a wall to stop
 
 ```blocks
 // @hide
@@ -44,7 +47,7 @@ let mySprite = sprites.create(img`
 `, SpriteKind.Player)
 // @hide
 let myMover = gridmove.create(mySprite)
-myMover.autoStop(true)
+myMover.setMode(Mode.Step)
 ```
 
 ## Use as Extension [![MakeCode Arcade Release](https://github.com/spinglass/pxt-arcade-gridmove/actions/workflows/makecode-release.yml/badge.svg)](https://github.com/spinglass/pxt-arcade-gridmove/actions/workflows/makecode-release.yml)
