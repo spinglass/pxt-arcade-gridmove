@@ -19,6 +19,20 @@ let mySprite = sprites.create(img`
 let myMover = gridmove.create(mySprite)
 ```
 
+### ``place``
+
+Use the ``place`` block to reset the move on a getTileLocation
+
+```blocks
+// @hide
+let mySprite = sprites.create(img`
+    1
+`, SpriteKind.Player)
+// @hide
+let myMover = gridmove.create(mySprite)
+myMover.place(tiles.getTileLocation(1, 1))
+```
+
 ### ``setPlayerControl``
 
 Use the ``setPlayerControl`` block to enable or disable control of the mover with buttons
@@ -62,6 +76,20 @@ let mySprite = sprites.create(img`
 // @hide
 let myMover = gridmove.create(mySprite)
 myMover.setMode(gridmove.Mode.Step)
+```
+
+### ``setFreeze``
+
+Use the ``setFreeze`` block to pause or unpause the mover immediately.
+
+```blocks
+// @hide
+let mySprite = sprites.create(img`
+    1
+`, SpriteKind.Player)
+// @hide
+let myMover = gridmove.create(mySprite)
+myMover.setFreeze(true)
 ```
 
 ## Use as Extension ![MakeCode Arcade Release](https://github.com/spinglass/pxt-arcade-gridmove/actions/workflows/makecode-release.yml/badge.svg)
