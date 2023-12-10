@@ -12,13 +12,12 @@
 Allow Grid Move to control a Sprite
 
 ```blocks
-let mySprite = sprites.create(img`
+let myMover = gridmove.create(img`
     1 1 1 1
     1 . . 1
     1 . . 1
     1 1 1 1
 `, SpriteKind.Player)
-let myMover = gridmove.create(mySprite)
 ```
 
 #### ``place``
@@ -27,11 +26,9 @@ Reset the mover on a tile location.
 
 ```blocks
 // @hide
-let mySprite = sprites.create(img`
+let myMover = gridmove.create(img`
     1
 `, SpriteKind.Player)
-// @hide
-let myMover = gridmove.create(mySprite)
 myMover.place(tiles.getTileLocation(1, 1))
 ```
 
@@ -43,11 +40,9 @@ Enable or disable control of the mover with buttons.
 
 ```blocks
 // @hide
-let mySprite = sprites.create(img`
+let myMover = gridmove.create(img`
     1
 `, SpriteKind.Player)
-// @hide
-let myMover = gridmove.create(mySprite)
 myMover.setPlayerControl(true)
 ```
 
@@ -57,11 +52,9 @@ Set the speed for a mover when not stopped.
 
 ```blocks
 // @hide
-let mySprite = sprites.create(img`
+let myMover = gridmove.create(img`
     1
 `, SpriteKind.Player)
-// @hide
-let myMover = gridmove.create(mySprite)
 myMover.setSpeed(100)
 ```
 
@@ -74,11 +67,9 @@ Determine how the mover behaves
 
 ```blocks
 // @hide
-let mySprite = sprites.create(img`
+let myMover = gridmove.create(img`
     1
 `, SpriteKind.Player)
-// @hide
-let myMover = gridmove.create(mySprite)
 myMover.setMode(gridmove.Mode.Step)
 ```
 
@@ -88,11 +79,9 @@ Immediately pause or unpause the mover.
 
 ```blocks
 // @hide
-let mySprite = sprites.create(img`
+let myMover = gridmove.create(img`
     1
 `, SpriteKind.Player)
-// @hide
-let myMover = gridmove.create(mySprite)
 myMover.setFreeze(true)
 ```
 

@@ -8,8 +8,7 @@
     "files": [
         "README.md",
         "assets.json",
-        "gridmove.ts",
-        "main.py"
+        "gridmove.ts"
     ],
     "testFiles": [
         "test.ts"
