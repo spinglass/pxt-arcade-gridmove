@@ -1,5 +1,5 @@
 //% weight=100 color=#0fbc11 icon="\uf0b2" block="GridMove"
-//% groups='["Create", "Movement"]'
+//% groups='["Create", "Movement", "State"]'
 namespace gridmove {
     export enum Direction {
         None,
@@ -178,18 +178,34 @@ namespace gridmove {
             this._vy = this._sprite.vy
         }
 
+        //% group="State"
         //% blockSetVariable="myMover"
         //% blockCombine block="x"
         get x(): number {
             return this._x
         }
 
+        //% group="State"
         //% blockSetVariable="myMover"
         //% blockCombine block="y"
         get y(): number {
             return this._y
         }
 
+        //% group="State"
+        //% blockSetVariable="myMover"
+        //% blockCombine block="vx"
+        get vx(): number {
+            return this._vx
+        }
+
+        //% group="State"
+        //% blockSetVariable="myMover"
+        //% blockCombine block="vy"
+        get vy(): number {
+            return this._vy
+        }
+        
         //% blockId=gridmove_request_direction
         //% group="Movement" weight=100
         //% block="set $this request to $request"
