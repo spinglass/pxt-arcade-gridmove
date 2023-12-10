@@ -43,8 +43,11 @@ namespace gridmove {
         _playerControl: boolean
         _mode: Mode
         _request: Direction
+        _freeze: boolean
         _x: number
         _y: number
+        _vx: number
+        _vy: number
         _loc: tiles.Location
 
         constructor(sprite: Sprite) {
@@ -53,17 +56,18 @@ namespace gridmove {
             this._playerControl = false
             this._mode = Mode.Step
             this._request = Direction.None
+            this._freeze = false
             this._x = sprite ? sprite.x : 0
             this._y = sprite ? sprite.y : 0
         }
 
         public update() {
-            if (!this._sprite) {
+            if (!this._sprite || this._freeze) {
                 return
             }
             
-            this.updateMovement()
             this.updatePlayerControl()
+            this.updateMovement()
         }
 
         private updatePlayerControl() {
@@ -170,19 +174,21 @@ namespace gridmove {
 
             this._x = this._sprite.x
             this._y = this._sprite.y
+            this._vx = this._sprite.vx
+            this._vy = this._sprite.vy
         }
 
         //% blockId=gridmove_request_direction
-        //% group="Movement"
-        //% block="request $this to move $request"
+        //% group="Movement" weight=100
+        //% block="set $this request to $request"
         //% this.defl=myMover
         //% request.defl=Direction.None
-        public requestDirection(request: Direction) {
+        public setRequest(request: Direction) {
             this._request = request;
         }
 
         //% blockId=gridmove_set_speed
-        //% group="Movement"
+        //% group="Movement" weight=90
         //% block="set $this speed to $speed"
         //% this.defl=myMover
         //% speed.defl=100
@@ -191,7 +197,7 @@ namespace gridmove {
         }
 
         //% blockId=gridmove_set_player_control
-        //% group="Movement"
+        //% group="Movement" weight=80
         //% block="set $this player control $enable"
         //% this.defl=myMover
         //% enable.defl=true
@@ -201,17 +207,58 @@ namespace gridmove {
         }
 
         //% blockId=gridmove_set_mode
-        //% group="Movement"
+        //% group="Movement" weight=70
         //% block="set $this mode to $mode"
         //% this.defl=myMover
         //% mode.defl=Mode.Step
         public setMode(mode: Mode) {
             this._mode = mode
         }
+
+        //% blockId=gridmove_set_freeze
+        //% group="Movement" weight=60
+        //% block="set $this freeze to %enable"
+        //% this.defl=myMover
+        //% enable.defl=true
+        //% enable.shadow=toggleOnOff
+        public setFreeze(enable: boolean) {
+            this._freeze = enable
+            if (this._sprite) {
+                if (this._freeze) {
+                    this._vx = this._sprite.vx
+                    this._vy = this._sprite.vy
+                    this._sprite.vx = 0
+                    this._sprite.vy = 0
+                } else {
+                    this._sprite.vx = this._vx
+                    this._sprite.vy = this._vy
+                }
+            }
+        }
+
+        //% blockId=gridmove_place
+        //% group="Create" weight=90
+        //% block="place $this on top of $loc"
+        //% this.defl=myMover
+        //% loc.shadow=mapgettile
+        public place(loc: tiles.Location) {
+            if (this._sprite)
+            {
+                tiles.placeOnTile(this._sprite, loc)
+                this._sprite.vx = 0
+                this._sprite.vy = 0
+                this._x = this._sprite.x
+                this._y = this._sprite.y
+                this._vx = 0
+                this._vy = 0
+                this._request = Direction.None
+                this._freeze = false
+            }
+        }
     }
 
     //% blockId=gridmove_create
-    //% group="Create"
+    //% group="Create" weight=100
     //% block="mover for sprite $sprite"
     //% sprite.defl=mySprite
     //% sprite.shadow=variables_get
