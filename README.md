@@ -32,6 +32,18 @@ let myMover = gridmove.create(img`
 myMover.place(tiles.getTileLocation(1, 1))
 ```
 
+#### ``cameraFollow``
+
+Set the scene camera to follow the myMover
+
+```blocks
+// @hide
+let myMover = gridmove.create(img`
+    1
+`, SpriteKind.Player)
+myMover.cameraFollow()
+```
+
 ### Movement
 
 #### ``setPlayerControl``
