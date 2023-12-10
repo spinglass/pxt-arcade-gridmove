@@ -178,13 +178,13 @@ namespace gridmove {
             this._vy = this._sprite.vy
         }
 
-        //% blockSetVariable="mySprite"
+        //% blockSetVariable="myMover"
         //% blockCombine block="x"
         get x(): number {
             return this._x
         }
 
-        //% blockSetVariable="mySprite"
+        //% blockSetVariable="myMover"
         //% blockCombine block="y"
         get y(): number {
             return this._y
