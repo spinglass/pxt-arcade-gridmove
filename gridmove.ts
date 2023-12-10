@@ -255,6 +255,14 @@ namespace gridmove {
                 this._freeze = false
             }
         }
+
+        //% blockId=gridmove_camera_follow
+        //% group="Create" weight=80
+        //% block="camera follow $this"
+        //% this.defl=myMover
+        public cameraFollow() {
+            scene.cameraFollowSprite(this._sprite)
+        }
     }
 
     //% blockId=gridmove_create
