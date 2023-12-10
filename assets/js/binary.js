@@ -1,5 +1,5 @@
-// meta={"simUrl":"https://trg-arcade.userpxt.io/v1.12.46/---simulator","cdnUrl":"https://pxt.azureedge.net","version":"0.6.1","target":"arcade","targetVersion":"1.12.46","repo":"spinglass/pxt-arcade-gridmove"}
-// total=1308701 new=8.69% cached=85.65% other=5.66%
+// meta={"simUrl":"https://trg-arcade.userpxt.io/v1.12.46/---simulator","cdnUrl":"https://pxt.azureedge.net","version":"0.6.2","target":"arcade","targetVersion":"1.12.46","repo":"spinglass/pxt-arcade-gridmove"}
+// total=1310713 new=8.82% cached=85.52% other=5.66%
 (function (ectx) {
 'use strict';
 const runtime = ectx.runtime;
@@ -446,7 +446,7 @@ const pxsim_pxtrt = pxsim.pxtrt;
 const pxsim_numops = pxsim.numops;
 
 
-function _main___P292299(s) {
+function _main___P295678(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -844,7 +844,7 @@ switch (step) {
     s.callLocIdx = 62; s.pc = 36; return s.tmp_0;
   case 36:
     r0 = s.retval;
-    s.tmp_0 = gridmove_create__P292189_mk(s);
+    s.tmp_0 = gridmove_create__P295564_mk(s);
     r0 = pxsim.image.ofBuffer(_hex259385);
     s.tmp_0.arg0 = r0;
     s.tmp_0.arg1 = globals.Player___254405;
@@ -852,19 +852,19 @@ switch (step) {
   case 37:
     r0 = s.retval;
     globals.myMover___256289 = (r0);
-    s.tmp_0 = gridmove_Mover_setSpeed__P291756_mk(s);
+    s.tmp_0 = gridmove_Mover_setSpeed__P295125_mk(s);
     s.tmp_0.arg0 = globals.myMover___256289;
     s.tmp_0.arg1 = 50;
     s.callLocIdx = 117; s.pc = 38; return s.tmp_0;
   case 38:
     r0 = s.retval;
-    s.tmp_0 = gridmove_Mover_setPlayerControl__P291757_mk(s);
+    s.tmp_0 = gridmove_Mover_setPlayerControl__P295126_mk(s);
     s.tmp_0.arg0 = globals.myMover___256289;
     s.tmp_0.arg1 = true;
     s.callLocIdx = 118; s.pc = 39; return s.tmp_0;
   case 39:
     r0 = s.retval;
-    s.tmp_0 = gridmove_Mover_setMode__P291758_mk(s);
+    s.tmp_0 = gridmove_Mover_setMode__P295127_mk(s);
     s.tmp_0.arg0 = globals.myMover___256289;
     s.tmp_0.arg1 = 2;
     s.callLocIdx = 119; s.pc = 40; return s.tmp_0;
@@ -874,13 +874,13 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-_main___P292299.info = {"start":0,"length":0,"line":0,"column":0,"endLine":0,"endColumn":0,"fileName":"test.ts","functionName":"<main>","argumentNames":[]}
-_main___P292299.continuations = [  ]
+_main___P295678.info = {"start":0,"length":0,"line":0,"column":0,"endLine":0,"endColumn":0,"fileName":"test.ts","functionName":"<main>","argumentNames":[]}
+_main___P295678.continuations = [  ]
 
-function _main___P292299_mk(s) {
+function _main___P295678_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: _main___P292299, depth: s.depth + 1,
+        parent: s, fn: _main___P295678, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -1420,7 +1420,7 @@ function gameOverConfig_inline__P256870_mk(s) {
 
 
 
-function gridmove_Mover_setMode__P291758(s) {
+function gridmove_Mover_setMode__P295127(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -1436,18 +1436,18 @@ switch (step) {
       s.lambdaArgs = null;
     }
     r0 = s.arg0;
-    if (!checkSubtype(r0, gridmove_Mover__C291751_VT)) failedCast(r0);
+    if (!checkSubtype(r0, gridmove_Mover__C295118_VT)) failedCast(r0);
     r0 = (s.arg0).fields["_mode"] = (s.arg1);
     r0 = undefined;
     return leave(s, r0)
   default: oops()
 } } }
-gridmove_Mover_setMode__P291758.info = {"start":6559,"length":68,"line":213,"column":8,"endLine":215,"endColumn":9,"fileName":"gridmove.ts","functionName":"setMode","argumentNames":["this","mode"]}
+gridmove_Mover_setMode__P295127.info = {"start":6837,"length":68,"line":225,"column":8,"endLine":227,"endColumn":9,"fileName":"gridmove.ts","functionName":"setMode","argumentNames":["this","mode"]}
 
-function gridmove_Mover_setMode__P291758_mk(s) {
+function gridmove_Mover_setMode__P295127_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: gridmove_Mover_setMode__P291758, depth: s.depth + 1,
+        parent: s, fn: gridmove_Mover_setMode__P295127, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   arg0: undefined,
   arg1: undefined,
@@ -1457,7 +1457,7 @@ function gridmove_Mover_setMode__P291758_mk(s) {
 
 
 
-function gridmove_Mover_setPlayerControl__P291757(s) {
+function gridmove_Mover_setPlayerControl__P295126(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -1473,18 +1473,18 @@ switch (step) {
       s.lambdaArgs = null;
     }
     r0 = s.arg0;
-    if (!checkSubtype(r0, gridmove_Mover__C291751_VT)) failedCast(r0);
+    if (!checkSubtype(r0, gridmove_Mover__C295118_VT)) failedCast(r0);
     r0 = (s.arg0).fields["_playerControl"] = (s.arg1);
     r0 = undefined;
     return leave(s, r0)
   default: oops()
 } } }
-gridmove_Mover_setPlayerControl__P291757.info = {"start":6273,"length":93,"line":204,"column":8,"endLine":206,"endColumn":9,"fileName":"gridmove.ts","functionName":"setPlayerControl","argumentNames":["this","enable"]}
+gridmove_Mover_setPlayerControl__P295126.info = {"start":6551,"length":93,"line":216,"column":8,"endLine":218,"endColumn":9,"fileName":"gridmove.ts","functionName":"setPlayerControl","argumentNames":["this","enable"]}
 
-function gridmove_Mover_setPlayerControl__P291757_mk(s) {
+function gridmove_Mover_setPlayerControl__P295126_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: gridmove_Mover_setPlayerControl__P291757, depth: s.depth + 1,
+        parent: s, fn: gridmove_Mover_setPlayerControl__P295126, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   arg0: undefined,
   arg1: undefined,
@@ -1494,7 +1494,7 @@ function gridmove_Mover_setPlayerControl__P291757_mk(s) {
 
 
 
-function gridmove_Mover_setSpeed__P291756(s) {
+function gridmove_Mover_setSpeed__P295125(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -1510,18 +1510,18 @@ switch (step) {
       s.lambdaArgs = null;
     }
     r0 = s.arg0;
-    if (!checkSubtype(r0, gridmove_Mover__C291751_VT)) failedCast(r0);
+    if (!checkSubtype(r0, gridmove_Mover__C295118_VT)) failedCast(r0);
     r0 = (s.arg0).fields["_speed"] = (s.arg1);
     r0 = undefined;
     return leave(s, r0)
   default: oops()
 } } }
-gridmove_Mover_setSpeed__P291756.info = {"start":5952,"length":74,"line":194,"column":8,"endLine":196,"endColumn":9,"fileName":"gridmove.ts","functionName":"setSpeed","argumentNames":["this","speed"]}
+gridmove_Mover_setSpeed__P295125.info = {"start":6230,"length":74,"line":206,"column":8,"endLine":208,"endColumn":9,"fileName":"gridmove.ts","functionName":"setSpeed","argumentNames":["this","speed"]}
 
-function gridmove_Mover_setSpeed__P291756_mk(s) {
+function gridmove_Mover_setSpeed__P295125_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: gridmove_Mover_setSpeed__P291756, depth: s.depth + 1,
+        parent: s, fn: gridmove_Mover_setSpeed__P295125, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   arg0: undefined,
   arg1: undefined,
@@ -1531,7 +1531,7 @@ function gridmove_Mover_setSpeed__P291756_mk(s) {
 
 
 
-function gridmove_create__P292189(s) {
+function gridmove_create__P295564(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -1541,44 +1541,44 @@ if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) re
 switch (step) {
   case 0:
 
-    s.mm___292192 = undefined;
-    s.sprite___292195 = undefined;
+    s.mm___295567 = undefined;
+    s.sprite___295570 = undefined;
     if (s.lambdaArgs) {
       s.arg0 = (s.lambdaArgs[0]);
       s.arg1 = (s.lambdaArgs[1]);
       s.lambdaArgs = null;
     }
-    s.tmp_0 = gridmove_getMoverManager__P291737_mk(s);
+    s.tmp_0 = gridmove_getMoverManager__P295104_mk(s);
     s.callLocIdx = 105; s.pc = 1; return s.tmp_0;
   case 1:
     r0 = s.retval;
-    s.mm___292192 = (r0);
+    s.mm___295567 = (r0);
     s.tmp_0 = sprites_create__P254200_mk(s);
     s.tmp_0.arg0 = s.arg0;
     s.tmp_0.arg1 = s.arg1;
     s.callLocIdx = 106; s.pc = 2; return s.tmp_0;
   case 2:
     r0 = s.retval;
-    s.sprite___292195 = (r0);
-    s.tmp_0 = gridmove_MoverManager_createMover__P291724_mk(s);
-    s.tmp_0.arg0 = s.mm___292192;
-    s.tmp_0.arg1 = s.sprite___292195;
+    s.sprite___295570 = (r0);
+    s.tmp_0 = gridmove_MoverManager_createMover__P295091_mk(s);
+    s.tmp_0.arg0 = s.mm___295567;
+    s.tmp_0.arg1 = s.sprite___295570;
     s.callLocIdx = 107; s.pc = 3; return s.tmp_0;
   case 3:
     r0 = s.retval;
     return leave(s, r0)
   default: oops()
 } } }
-gridmove_create__P292189.info = {"start":8405,"length":189,"line":271,"column":4,"endLine":275,"endColumn":5,"fileName":"gridmove.ts","functionName":"create","argumentNames":["img","kind"]}
+gridmove_create__P295564.info = {"start":8683,"length":189,"line":283,"column":4,"endLine":287,"endColumn":5,"fileName":"gridmove.ts","functionName":"create","argumentNames":["img","kind"]}
 
-function gridmove_create__P292189_mk(s) {
+function gridmove_create__P295564_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: gridmove_create__P292189, depth: s.depth + 1,
+        parent: s, fn: gridmove_create__P295564, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
-  mm___292192: undefined,
-  sprite___292195: undefined,
+  mm___295567: undefined,
+  sprite___295570: undefined,
   arg0: undefined,
   arg1: undefined,
 } }
@@ -1587,7 +1587,7 @@ function gridmove_create__P292189_mk(s) {
 
 
 
-function gridmove_MoverManager_createMover__P291724(s) {
+function gridmove_MoverManager_createMover__P295091(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -1597,40 +1597,40 @@ if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) re
 switch (step) {
   case 0:
 
-    s.mover___291748 = undefined;
+    s.mover___295115 = undefined;
     if (s.lambdaArgs) {
       s.arg0 = (s.lambdaArgs[0]);
       s.arg1 = (s.lambdaArgs[1]);
       s.lambdaArgs = null;
     }
     r0 = s.arg0;
-    if (!checkSubtype(r0, gridmove_MoverManager__C291722_VT)) failedCast(r0);
-    r0 = pxsim_pxtcore_mkClassInstance(gridmove_Mover__C291751_VT);
+    if (!checkSubtype(r0, gridmove_MoverManager__C295089_VT)) failedCast(r0);
+    r0 = pxsim_pxtcore_mkClassInstance(gridmove_Mover__C295118_VT);
     s.tmp_0 = r0;
-    s.tmp_1 = gridmove_Mover_constructor__P291762_mk(s);
+    s.tmp_1 = gridmove_Mover_constructor__P295131_mk(s);
     s.tmp_1.arg0 = s.tmp_0;
     s.tmp_1.arg1 = s.arg1;
     s.callLocIdx = 67; s.pc = 1; return s.tmp_1;
   case 1:
     r0 = s.retval;
-    s.mover___291748 = (s.tmp_0);
+    s.mover___295115 = (s.tmp_0);
     r0 = s.arg0.fields["_movers"];
     s.tmp_0 = r0;
-    r0 = pxsim_Array__push(s.tmp_0, s.mover___291748);
-    r0 = s.mover___291748;
+    r0 = pxsim_Array__push(s.tmp_0, s.mover___295115);
+    r0 = s.mover___295115;
     return leave(s, r0)
   default: oops()
 } } }
-gridmove_MoverManager_createMover__P291724.info = {"start":636,"length":159,"line":32,"column":8,"endLine":36,"endColumn":9,"fileName":"gridmove.ts","functionName":"createMover","argumentNames":["this","sprite"]}
+gridmove_MoverManager_createMover__P295091.info = {"start":636,"length":159,"line":32,"column":8,"endLine":36,"endColumn":9,"fileName":"gridmove.ts","functionName":"createMover","argumentNames":["this","sprite"]}
 
-function gridmove_MoverManager_createMover__P291724_mk(s) {
+function gridmove_MoverManager_createMover__P295091_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: gridmove_MoverManager_createMover__P291724, depth: s.depth + 1,
+        parent: s, fn: gridmove_MoverManager_createMover__P295091, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
-  mover___291748: undefined,
+  mover___295115: undefined,
   arg0: undefined,
   arg1: undefined,
 } }
@@ -1639,7 +1639,7 @@ function gridmove_MoverManager_createMover__P291724_mk(s) {
 
 
 
-function gridmove_Mover_constructor__P291762(s) {
+function gridmove_Mover_constructor__P295131(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -1655,7 +1655,7 @@ switch (step) {
       s.lambdaArgs = null;
     }
     r0 = s.arg0;
-    if (!checkSubtype(r0, gridmove_Mover__C291751_VT)) failedCast(r0);
+    if (!checkSubtype(r0, gridmove_Mover__C295118_VT)) failedCast(r0);
     r0 = (s.arg0).fields["_sprite"] = (s.arg1);
     r0 = (s.arg0).fields["_speed"] = (100);
     r0 = (s.arg0).fields["_playerControl"] = (false);
@@ -1694,12 +1694,12 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-gridmove_Mover_constructor__P291762.info = {"start":1096,"length":343,"line":52,"column":8,"endLine":61,"endColumn":9,"fileName":"gridmove.ts","functionName":"inline","argumentNames":["this","sprite"]}
+gridmove_Mover_constructor__P295131.info = {"start":1096,"length":343,"line":52,"column":8,"endLine":61,"endColumn":9,"fileName":"gridmove.ts","functionName":"inline","argumentNames":["this","sprite"]}
 
-function gridmove_Mover_constructor__P291762_mk(s) {
+function gridmove_Mover_constructor__P295131_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: gridmove_Mover_constructor__P291762, depth: s.depth + 1,
+        parent: s, fn: gridmove_Mover_constructor__P295131, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -4784,7 +4784,7 @@ function helpers_arrayForEach__P252034_mk(s) {
 
 
 
-function gridmove_getMoverManager__P291737(s) {
+function gridmove_getMoverManager__P295104(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -4794,7 +4794,7 @@ if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) re
 switch (step) {
   case 0:
 
-    s.mm___292203 = undefined;
+    s.mm___295578 = undefined;
     s.tmp_0 = if_moverManager_1_mk(s);
     s.tmp_2 = game_currentScene__P254924_mk(s);
     s.callLocIdx = 108; s.pc = 4; return s.tmp_2;
@@ -4813,23 +4813,23 @@ switch (step) {
     }
   case 3:
     r0 = s.retval;
-    s.mm___292203 = (r0);
-    r0 = pxsim_numops_toBoolDecr(s.mm___292203);
+    s.mm___295578 = (r0);
+    r0 = pxsim_numops_toBoolDecr(s.mm___295578);
     s.tmp_1 = r0;
     r0 = pxsim_Boolean__bang(s.tmp_1);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 1; continue; }
-    r0 = pxsim_pxtcore_mkClassInstance(gridmove_MoverManager__C291722_VT);
+    r0 = pxsim_pxtcore_mkClassInstance(gridmove_MoverManager__C295089_VT);
     s.tmp_2 = r0;
-    s.tmp_3 = gridmove_MoverManager_constructor__P291725_mk(s);
+    s.tmp_3 = gridmove_MoverManager_constructor__P295092_mk(s);
     s.tmp_3.arg0 = s.tmp_2;
     s.callLocIdx = 111; s.pc = 5; return s.tmp_3;
   case 5:
     r0 = s.retval;
-    s.mm___292203 = (s.tmp_2);
+    s.mm___295578 = (s.tmp_2);
     s.tmp_0 = if_init_1_mk(s);
-    s.tmp_0.arg0 = s.mm___292203;
+    s.tmp_0.arg0 = s.mm___295578;
     if (!s.tmp_0.arg0.vtable.iface) {
       setupLambda(s.tmp_0, pxsim_pxtrt.mapGetByString(s.tmp_0.arg0, "init"), 1);
       s.callLocIdx = 112; s.pc = 6; return s.tmp_0;
@@ -4849,7 +4849,7 @@ switch (step) {
     s.tmp_1 = r0;
     r0 = s.tmp_1.fields["_data"];
     s.tmp_0.arg0 = r0;
-    s.tmp_0.arg1 = s.mm___292203;
+    s.tmp_0.arg1 = s.mm___295578;
     if (!s.tmp_0.arg0.vtable.iface) {
       s.retval = pxsim_pxtrt.mapSetByString(s.tmp_0.arg0, "moverManager", s.tmp_0.arg1);
     } else {
@@ -4862,29 +4862,29 @@ switch (step) {
     r0 = s.retval;
   case 1:
   case 2:
-    r0 = s.mm___292203;
+    r0 = s.mm___295578;
     return leave(s, r0)
   default: oops()
 } } }
-gridmove_getMoverManager__P291737.info = {"start":8600,"length":263,"line":277,"column":4,"endLine":285,"endColumn":5,"fileName":"gridmove.ts","functionName":"getMoverManager","argumentNames":[]}
+gridmove_getMoverManager__P295104.info = {"start":8878,"length":263,"line":289,"column":4,"endLine":297,"endColumn":5,"fileName":"gridmove.ts","functionName":"getMoverManager","argumentNames":[]}
 
-function gridmove_getMoverManager__P291737_mk(s) {
+function gridmove_getMoverManager__P295104_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: gridmove_getMoverManager__P291737, depth: s.depth + 1,
+        parent: s, fn: gridmove_getMoverManager__P295104, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
   tmp_2: undefined,
   tmp_3: undefined,
-  mm___292203: undefined,
+  mm___295578: undefined,
 } }
 
 
 
 
 
-function gridmove_MoverManager_constructor__P291725(s) {
+function gridmove_MoverManager_constructor__P295092(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -4899,7 +4899,7 @@ switch (step) {
       s.lambdaArgs = null;
     }
     r0 = s.arg0;
-    if (!checkSubtype(r0, gridmove_MoverManager__C291722_VT)) failedCast(r0);
+    if (!checkSubtype(r0, gridmove_MoverManager__C295089_VT)) failedCast(r0);
     s.tmp_0 = r0 = s.arg0;
     r0 = pxsim_Array__mk();
     s.tmp_1 = r0;
@@ -4908,12 +4908,12 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-gridmove_MoverManager_constructor__P291725.info = {"start":376,"length":55,"line":21,"column":8,"endLine":23,"endColumn":9,"fileName":"gridmove.ts","functionName":"inline","argumentNames":["this"]}
+gridmove_MoverManager_constructor__P295092.info = {"start":376,"length":55,"line":21,"column":8,"endLine":23,"endColumn":9,"fileName":"gridmove.ts","functionName":"inline","argumentNames":["this"]}
 
-function gridmove_MoverManager_constructor__P291725_mk(s) {
+function gridmove_MoverManager_constructor__P295092_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: gridmove_MoverManager_constructor__P291725, depth: s.depth + 1,
+        parent: s, fn: gridmove_MoverManager_constructor__P295092, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -38548,7 +38548,7 @@ function sprites_BaseSprite___visible__P254022_mk(s) {
 
 
 
-function gridmove_MoverManager_init__P291723(s) {
+function gridmove_MoverManager_init__P295090(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -38563,9 +38563,9 @@ switch (step) {
       s.lambdaArgs = null;
     }
     r0 = s.arg0;
-    if (!checkSubtype(r0, gridmove_MoverManager__C291722_VT)) failedCast(r0);
+    if (!checkSubtype(r0, gridmove_MoverManager__C295089_VT)) failedCast(r0);
     s.tmp_0 = game_onUpdate__P254948_mk(s);
-    s.tmp_0.arg0 = gridmove_MoverManager_init_inline__P291733;
+    s.tmp_0.arg0 = gridmove_MoverManager_init_inline__P295100;
     s.callLocIdx = 66; s.pc = 1; return s.tmp_0;
   case 1:
     r0 = s.retval;
@@ -38573,12 +38573,12 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-gridmove_MoverManager_init__P291723.info = {"start":441,"length":185,"line":25,"column":8,"endLine":30,"endColumn":9,"fileName":"gridmove.ts","functionName":"init","argumentNames":["this"]}
+gridmove_MoverManager_init__P295090.info = {"start":441,"length":185,"line":25,"column":8,"endLine":30,"endColumn":9,"fileName":"gridmove.ts","functionName":"init","argumentNames":["this"]}
 
-function gridmove_MoverManager_init__P291723_mk(s) {
+function gridmove_MoverManager_init__P295090_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: gridmove_MoverManager_init__P291723, depth: s.depth + 1,
+        parent: s, fn: gridmove_MoverManager_init__P295090, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   arg0: undefined,
@@ -38588,7 +38588,7 @@ function gridmove_MoverManager_init__P291723_mk(s) {
 
 
 
-function gridmove_MoverManager_init_inline__P291733(s) {
+function gridmove_MoverManager_init_inline__P295100(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -38598,16 +38598,16 @@ if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) re
 switch (step) {
   case 0:
 
-    s.mm___291734 = undefined;
-    s.tmp_0 = gridmove_getMoverManager__P291737_mk(s);
+    s.mm___295101 = undefined;
+    s.tmp_0 = gridmove_getMoverManager__P295104_mk(s);
     s.callLocIdx = 63; s.pc = 1; return s.tmp_0;
   case 1:
     r0 = s.retval;
-    s.mm___291734 = (r0);
+    s.mm___295101 = (r0);
     s.tmp_0 = helpers_arrayForEach__P252034_mk(s);
-    r0 = s.mm___291734.fields["_movers"];
+    r0 = s.mm___295101.fields["_movers"];
     s.tmp_0.arg0 = r0;
-    s.tmp_0.arg1 = gridmove_MoverManager_init_inline__P291741;
+    s.tmp_0.arg1 = gridmove_MoverManager_init_inline__P295108;
     s.callLocIdx = 65; s.pc = 2; return s.tmp_0;
   case 2:
     r0 = s.retval;
@@ -38615,22 +38615,22 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-gridmove_MoverManager_init_inline__P291733.info = {"start":483,"length":132,"line":26,"column":26,"endLine":29,"endColumn":13,"fileName":"gridmove.ts","functionName":"inline","argumentNames":[]}
+gridmove_MoverManager_init_inline__P295100.info = {"start":483,"length":132,"line":26,"column":26,"endLine":29,"endColumn":13,"fileName":"gridmove.ts","functionName":"inline","argumentNames":[]}
 
-function gridmove_MoverManager_init_inline__P291733_mk(s) {
+function gridmove_MoverManager_init_inline__P295100_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: gridmove_MoverManager_init_inline__P291733, depth: s.depth + 1,
+        parent: s, fn: gridmove_MoverManager_init_inline__P295100, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
-  mm___291734: undefined,
+  mm___295101: undefined,
 } }
 
 
 
 
 
-function gridmove_MoverManager_init_inline__P291741(s) {
+function gridmove_MoverManager_init_inline__P295108(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -38644,7 +38644,7 @@ switch (step) {
       s.arg0 = (s.lambdaArgs[0]);
       s.lambdaArgs = null;
     }
-    s.tmp_0 = gridmove_Mover_update__P291744_mk(s);
+    s.tmp_0 = gridmove_Mover_update__P295111_mk(s);
     s.tmp_0.arg0 = s.arg0;
     s.callLocIdx = 64; s.pc = 1; return s.tmp_0;
   case 1:
@@ -38653,12 +38653,12 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-gridmove_MoverManager_init_inline__P291741.info = {"start":577,"length":23,"line":28,"column":35,"endLine":28,"endColumn":58,"fileName":"gridmove.ts","functionName":"inline","argumentNames":["mover"]}
+gridmove_MoverManager_init_inline__P295108.info = {"start":577,"length":23,"line":28,"column":35,"endLine":28,"endColumn":58,"fileName":"gridmove.ts","functionName":"inline","argumentNames":["mover"]}
 
-function gridmove_MoverManager_init_inline__P291741_mk(s) {
+function gridmove_MoverManager_init_inline__P295108_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: gridmove_MoverManager_init_inline__P291741, depth: s.depth + 1,
+        parent: s, fn: gridmove_MoverManager_init_inline__P295108, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   arg0: undefined,
@@ -38668,7 +38668,7 @@ function gridmove_MoverManager_init_inline__P291741_mk(s) {
 
 
 
-function gridmove_Mover_update__P291744(s) {
+function gridmove_Mover_update__P295111(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -38683,7 +38683,7 @@ switch (step) {
       s.lambdaArgs = null;
     }
     r0 = s.arg0;
-    if (!checkSubtype(r0, gridmove_Mover__C291751_VT)) failedCast(r0);
+    if (!checkSubtype(r0, gridmove_Mover__C295118_VT)) failedCast(r0);
     r0 = s.arg0.fields["_sprite"];
     s.tmp_2 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_2);
@@ -38704,12 +38704,12 @@ switch (step) {
     { step = 5; continue; }
   case 3:
   case 4:
-    s.tmp_4 = gridmove_Mover_updatePlayerControl__P291752_mk(s);
+    s.tmp_4 = gridmove_Mover_updatePlayerControl__P295119_mk(s);
     s.tmp_4.arg0 = s.arg0;
     s.callLocIdx = 70; s.pc = 6; return s.tmp_4;
   case 6:
     r0 = s.retval;
-    s.tmp_0 = gridmove_Mover_updateMovement__P291754_mk(s);
+    s.tmp_0 = gridmove_Mover_updateMovement__P295121_mk(s);
     s.tmp_0.arg0 = s.arg0;
     s.callLocIdx = 71; s.pc = 7; return s.tmp_0;
   case 7:
@@ -38719,12 +38719,12 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-gridmove_Mover_update__P291744.info = {"start":1449,"length":199,"line":63,"column":8,"endLine":70,"endColumn":9,"fileName":"gridmove.ts","functionName":"update","argumentNames":["this"]}
+gridmove_Mover_update__P295111.info = {"start":1449,"length":199,"line":63,"column":8,"endLine":70,"endColumn":9,"fileName":"gridmove.ts","functionName":"update","argumentNames":["this"]}
 
-function gridmove_Mover_update__P291744_mk(s) {
+function gridmove_Mover_update__P295111_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: gridmove_Mover_update__P291744, depth: s.depth + 1,
+        parent: s, fn: gridmove_Mover_update__P295111, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -38738,7 +38738,7 @@ function gridmove_Mover_update__P291744_mk(s) {
 
 
 
-function gridmove_Mover_updateMovement__P291754(s) {
+function gridmove_Mover_updateMovement__P295121(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -38748,55 +38748,55 @@ if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) re
 switch (step) {
   case 0:
 
-    s.x___291873 = undefined;
-    s.y___291877 = undefined;
-    s.vx___291881 = undefined;
-    s.vy___291885 = undefined;
-    s.lx___291889 = undefined;
-    s.ly___291892 = undefined;
-    s.tx___291903 = undefined;
-    s.ty___291907 = undefined;
-    s.midx___291911 = undefined;
-    s.midy___291912 = undefined;
-    s.canStop___291953 = undefined;
+    s.x___295242 = undefined;
+    s.y___295246 = undefined;
+    s.vx___295250 = undefined;
+    s.vy___295254 = undefined;
+    s.lx___295258 = undefined;
+    s.ly___295261 = undefined;
+    s.tx___295272 = undefined;
+    s.ty___295276 = undefined;
+    s.midx___295280 = undefined;
+    s.midy___295281 = undefined;
+    s.canStop___295322 = undefined;
     if (s.lambdaArgs) {
       s.arg0 = (s.lambdaArgs[0]);
       s.lambdaArgs = null;
     }
     r0 = s.arg0;
-    if (!checkSubtype(r0, gridmove_Mover__C291751_VT)) failedCast(r0);
+    if (!checkSubtype(r0, gridmove_Mover__C295118_VT)) failedCast(r0);
     s.tmp_0 = Sprite_x__P254279_mk(s);
     r0 = s.arg0.fields["_sprite"];
     s.tmp_0.arg0 = r0;
     s.callLocIdx = 74; s.pc = 62; return s.tmp_0;
   case 62:
     r0 = s.retval;
-    s.x___291873 = (r0);
+    s.x___295242 = (r0);
     s.tmp_0 = Sprite_y__P254281_mk(s);
     r0 = s.arg0.fields["_sprite"];
     s.tmp_0.arg0 = r0;
     s.callLocIdx = 75; s.pc = 63; return s.tmp_0;
   case 63:
     r0 = s.retval;
-    s.y___291877 = (r0);
+    s.y___295246 = (r0);
     s.tmp_0 = Sprite_vx__P254283_mk(s);
     r0 = s.arg0.fields["_sprite"];
     s.tmp_0.arg0 = r0;
     s.callLocIdx = 76; s.pc = 64; return s.tmp_0;
   case 64:
     r0 = s.retval;
-    s.vx___291881 = (r0);
+    s.vx___295250 = (r0);
     s.tmp_0 = Sprite_vy__P254285_mk(s);
     r0 = s.arg0.fields["_sprite"];
     s.tmp_0.arg0 = r0;
     s.callLocIdx = 77; s.pc = 65; return s.tmp_0;
   case 65:
     r0 = s.retval;
-    s.vy___291885 = (r0);
+    s.vy___295254 = (r0);
     r0 = s.arg0.fields["_x"];
-    s.lx___291889 = (r0);
+    s.lx___295258 = (r0);
     r0 = s.arg0.fields["_y"];
-    s.ly___291892 = (r0);
+    s.ly___295261 = (r0);
     s.tmp_0 = r0 = s.arg0;
     s.tmp_2 = Sprite_tilemapLocation__P254349_mk(s);
     r0 = s.arg0.fields["_sprite"];
@@ -38823,86 +38823,86 @@ switch (step) {
     s.callLocIdx = 79; s.pc = 67; return s.tmp_3;
   case 67:
     r0 = s.retval;
-    s.tx___291903 = (r0);
+    s.tx___295272 = (r0);
     s.tmp_0 = tiles_Location_y__P254624_mk(s);
     r0 = s.arg0.fields["_loc"];
     s.tmp_0.arg0 = r0;
     s.callLocIdx = 80; s.pc = 68; return s.tmp_0;
   case 68:
     r0 = s.retval;
-    s.ty___291907 = (r0);
-    s.midx___291911 = (true);
-    s.midy___291912 = (true);
-    r0 = (s.vx___291881 > 0);
+    s.ty___295276 = (r0);
+    s.midx___295280 = (true);
+    s.midy___295281 = (true);
+    r0 = (s.vx___295250 > 0);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 5; continue; }
-    r0 = (s.lx___291889 < s.tx___291903);
+    r0 = (s.lx___295258 < s.tx___295272);
     s.tmp_1 = r0;
     r0 = pxsim_numops_toBool(s.tmp_1);
     if (r0) { step = 3; continue; }
     r0 = s.tmp_1;
     { step = 4; continue; }
   case 3:
-    r0 = (s.x___291873 >= s.tx___291903);
+    r0 = (s.x___295242 >= s.tx___295272);
   case 4:
     // jmp value (already in r0)
     s.tmp_2 = r0;
-    s.midx___291911 = (s.tmp_2);
+    s.midx___295280 = (s.tmp_2);
     { step = 18; continue; }
   case 5:
-    r0 = (s.vx___291881 < 0);
+    r0 = (s.vx___295250 < 0);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 8; continue; }
-    r0 = (s.lx___291889 > s.tx___291903);
+    r0 = (s.lx___295258 > s.tx___295272);
     s.tmp_1 = r0;
     r0 = pxsim_numops_toBool(s.tmp_1);
     if (r0) { step = 6; continue; }
     r0 = s.tmp_1;
     { step = 7; continue; }
   case 6:
-    r0 = (s.x___291873 <= s.tx___291903);
+    r0 = (s.x___295242 <= s.tx___295272);
   case 7:
     // jmp value (already in r0)
     s.tmp_2 = r0;
-    s.midx___291911 = (s.tmp_2);
+    s.midx___295280 = (s.tmp_2);
     { step = 17; continue; }
   case 8:
-    r0 = (s.vy___291885 > 0);
+    r0 = (s.vy___295254 > 0);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 11; continue; }
-    r0 = (s.ly___291892 < s.ty___291907);
+    r0 = (s.ly___295261 < s.ty___295276);
     s.tmp_1 = r0;
     r0 = pxsim_numops_toBool(s.tmp_1);
     if (r0) { step = 9; continue; }
     r0 = s.tmp_1;
     { step = 10; continue; }
   case 9:
-    r0 = (s.y___291877 >= s.ty___291907);
+    r0 = (s.y___295246 >= s.ty___295276);
   case 10:
     // jmp value (already in r0)
     s.tmp_2 = r0;
-    s.midy___291912 = (s.tmp_2);
+    s.midy___295281 = (s.tmp_2);
     { step = 16; continue; }
   case 11:
-    r0 = (s.vy___291885 < 0);
+    r0 = (s.vy___295254 < 0);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_0);
     if (!r0) { step = 14; continue; }
-    r0 = (s.ly___291892 > s.ty___291907);
+    r0 = (s.ly___295261 > s.ty___295276);
     s.tmp_1 = r0;
     r0 = pxsim_numops_toBool(s.tmp_1);
     if (r0) { step = 12; continue; }
     r0 = s.tmp_1;
     { step = 13; continue; }
   case 12:
-    r0 = (s.y___291877 <= s.ty___291907);
+    r0 = (s.y___295246 <= s.ty___295276);
   case 13:
     // jmp value (already in r0)
     s.tmp_2 = r0;
-    s.midy___291912 = (s.tmp_2);
+    s.midy___295281 = (s.tmp_2);
   case 14:
   case 15:
   case 16:
@@ -38923,15 +38923,15 @@ switch (step) {
   case 20:
     // jmp value (already in r0)
     s.tmp_3 = r0;
-    s.canStop___291953 = (s.tmp_3);
-    r0 = (s.vx___291881 != 0);
+    s.canStop___295322 = (s.tmp_3);
+    r0 = (s.vx___295250 != 0);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBool(s.tmp_0);
     if (!r0) { step = 21; continue; }
     r0 = s.tmp_0;
     { step = 22; continue; }
   case 21:
-    r0 = s.midy___291912;
+    r0 = s.midy___295281;
   case 22:
     // jmp value (already in r0)
     s.tmp_1 = r0;
@@ -38946,7 +38946,7 @@ switch (step) {
     r0 = s.tmp_2;
     { step = 24; continue; }
   case 23:
-    s.tmp_4 = gridmove_Mover_canMove__P291753_mk(s);
+    s.tmp_4 = gridmove_Mover_canMove__P295120_mk(s);
     s.tmp_4.arg0 = s.arg0;
     s.tmp_4.arg1 = 2;
     s.callLocIdx = 81; s.pc = 69; return s.tmp_4;
@@ -38983,7 +38983,7 @@ switch (step) {
     r0 = s.tmp_0;
     { step = 28; continue; }
   case 27:
-    s.tmp_2 = gridmove_Mover_canMove__P291753_mk(s);
+    s.tmp_2 = gridmove_Mover_canMove__P295120_mk(s);
     s.tmp_2.arg0 = s.arg0;
     s.tmp_2.arg1 = 0;
     s.callLocIdx = 84; s.pc = 72; return s.tmp_2;
@@ -39013,13 +39013,13 @@ switch (step) {
     r0 = s.retval;
     { step = 36; continue; }
   case 29:
-    s.tmp_0 = r0 = s.canStop___291953;
+    s.tmp_0 = r0 = s.canStop___295322;
     r0 = pxsim_numops_toBool(s.tmp_0);
     if (r0) { step = 30; continue; }
     r0 = s.tmp_0;
     { step = 31; continue; }
   case 30:
-    r0 = (s.vx___291881 != 0);
+    r0 = (s.vx___295250 != 0);
   case 31:
     // jmp value (already in r0)
     s.tmp_1 = r0;
@@ -39028,7 +39028,7 @@ switch (step) {
     r0 = s.tmp_1;
     { step = 33; continue; }
   case 32:
-    r0 = s.midx___291911;
+    r0 = s.midx___295280;
   case 33:
     // jmp value (already in r0)
     s.tmp_2 = r0;
@@ -39053,14 +39053,14 @@ switch (step) {
   case 36:
   case 37:
   case 38:
-    r0 = (s.vy___291885 != 0);
+    r0 = (s.vy___295254 != 0);
     s.tmp_0 = r0;
     r0 = pxsim_numops_toBool(s.tmp_0);
     if (!r0) { step = 39; continue; }
     r0 = s.tmp_0;
     { step = 40; continue; }
   case 39:
-    r0 = s.midx___291911;
+    r0 = s.midx___295280;
   case 40:
     // jmp value (already in r0)
     s.tmp_1 = r0;
@@ -39075,7 +39075,7 @@ switch (step) {
     r0 = s.tmp_2;
     { step = 42; continue; }
   case 41:
-    s.tmp_4 = gridmove_Mover_canMove__P291753_mk(s);
+    s.tmp_4 = gridmove_Mover_canMove__P295120_mk(s);
     s.tmp_4.arg0 = s.arg0;
     s.tmp_4.arg1 = 1;
     s.callLocIdx = 89; s.pc = 77; return s.tmp_4;
@@ -39114,7 +39114,7 @@ switch (step) {
     r0 = s.tmp_0;
     { step = 45; continue; }
   case 44:
-    s.tmp_2 = gridmove_Mover_canMove__P291753_mk(s);
+    s.tmp_2 = gridmove_Mover_canMove__P295120_mk(s);
     s.tmp_2.arg0 = s.arg0;
     s.tmp_2.arg1 = 3;
     s.callLocIdx = 92; s.pc = 80; return s.tmp_2;
@@ -39142,13 +39142,13 @@ switch (step) {
     r0 = s.retval;
     { step = 53; continue; }
   case 46:
-    s.tmp_0 = r0 = s.canStop___291953;
+    s.tmp_0 = r0 = s.canStop___295322;
     r0 = pxsim_numops_toBool(s.tmp_0);
     if (r0) { step = 47; continue; }
     r0 = s.tmp_0;
     { step = 48; continue; }
   case 47:
-    r0 = (s.vy___291885 != 0);
+    r0 = (s.vy___295254 != 0);
   case 48:
     // jmp value (already in r0)
     s.tmp_1 = r0;
@@ -39157,7 +39157,7 @@ switch (step) {
     r0 = s.tmp_1;
     { step = 50; continue; }
   case 49:
-    r0 = s.midy___291912;
+    r0 = s.midy___295281;
   case 50:
     // jmp value (already in r0)
     s.tmp_2 = r0;
@@ -39197,7 +39197,7 @@ switch (step) {
     s.tmp_3 = Sprite_x__P254280_mk(s);
     r0 = s.arg0.fields["_sprite"];
     s.tmp_3.arg0 = r0;
-    s.tmp_3.arg1 = s.tx___291903;
+    s.tmp_3.arg1 = s.tx___295272;
     s.callLocIdx = 98; s.pc = 86; return s.tmp_3;
   case 86:
     r0 = s.retval;
@@ -39217,7 +39217,7 @@ switch (step) {
     s.tmp_3 = Sprite_y__P254282_mk(s);
     r0 = s.arg0.fields["_sprite"];
     s.tmp_3.arg0 = r0;
-    s.tmp_3.arg1 = s.ty___291907;
+    s.tmp_3.arg1 = s.ty___295276;
     s.callLocIdx = 100; s.pc = 88; return s.tmp_3;
   case 88:
     r0 = s.retval;
@@ -39264,12 +39264,12 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-gridmove_Mover_updateMovement__P291754.info = {"start":2734,"length":2724,"line":106,"column":8,"endLine":178,"endColumn":9,"fileName":"gridmove.ts","functionName":"updateMovement","argumentNames":["this"]}
+gridmove_Mover_updateMovement__P295121.info = {"start":2734,"length":2724,"line":106,"column":8,"endLine":178,"endColumn":9,"fileName":"gridmove.ts","functionName":"updateMovement","argumentNames":["this"]}
 
-function gridmove_Mover_updateMovement__P291754_mk(s) {
+function gridmove_Mover_updateMovement__P295121_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: gridmove_Mover_updateMovement__P291754, depth: s.depth + 1,
+        parent: s, fn: gridmove_Mover_updateMovement__P295121, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
@@ -39278,17 +39278,17 @@ function gridmove_Mover_updateMovement__P291754_mk(s) {
   tmp_4: undefined,
   tmp_5: undefined,
   tmp_6: undefined,
-  x___291873: undefined,
-  y___291877: undefined,
-  vx___291881: undefined,
-  vy___291885: undefined,
-  lx___291889: undefined,
-  ly___291892: undefined,
-  tx___291903: undefined,
-  ty___291907: undefined,
-  midx___291911: undefined,
-  midy___291912: undefined,
-  canStop___291953: undefined,
+  x___295242: undefined,
+  y___295246: undefined,
+  vx___295250: undefined,
+  vy___295254: undefined,
+  lx___295258: undefined,
+  ly___295261: undefined,
+  tx___295272: undefined,
+  ty___295276: undefined,
+  midx___295280: undefined,
+  midy___295281: undefined,
+  canStop___295322: undefined,
   arg0: undefined,
 } }
 
@@ -39296,7 +39296,7 @@ function gridmove_Mover_updateMovement__P291754_mk(s) {
 
 
 
-function gridmove_Mover_canMove__P291753(s) {
+function gridmove_Mover_canMove__P295120(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -39306,14 +39306,14 @@ if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) re
 switch (step) {
   case 0:
 
-    s.neighbor___291858 = undefined;
+    s.neighbor___295227 = undefined;
     if (s.lambdaArgs) {
       s.arg0 = (s.lambdaArgs[0]);
       s.arg1 = (s.lambdaArgs[1]);
       s.lambdaArgs = null;
     }
     r0 = s.arg0;
-    if (!checkSubtype(r0, gridmove_Mover__C291751_VT)) failedCast(r0);
+    if (!checkSubtype(r0, gridmove_Mover__C295118_VT)) failedCast(r0);
     r0 = s.arg0.fields["_mode"];
     s.tmp_1 = r0;
     r0 = (s.tmp_1 != 1);
@@ -39327,11 +39327,11 @@ switch (step) {
     s.callLocIdx = 72; s.pc = 6; return s.tmp_2;
   case 6:
     r0 = s.retval;
-    s.neighbor___291858 = (r0);
-    r0 = pxsim_numops_toBoolDecr(s.neighbor___291858);
+    s.neighbor___295227 = (r0);
+    r0 = pxsim_numops_toBoolDecr(s.neighbor___295227);
     if (!r0) { step = 1; continue; }
     s.tmp_2 = tiles_Location_isWall__P254631_mk(s);
-    s.tmp_2.arg0 = s.neighbor___291858;
+    s.tmp_2.arg0 = s.neighbor___295227;
     s.callLocIdx = 73; s.pc = 7; return s.tmp_2;
   case 7:
     r0 = s.retval;
@@ -39349,17 +39349,17 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-gridmove_Mover_canMove__P291753.info = {"start":2322,"length":402,"line":95,"column":8,"endLine":104,"endColumn":9,"fileName":"gridmove.ts","functionName":"canMove","argumentNames":["this","direction"]}
+gridmove_Mover_canMove__P295120.info = {"start":2322,"length":402,"line":95,"column":8,"endLine":104,"endColumn":9,"fileName":"gridmove.ts","functionName":"canMove","argumentNames":["this","direction"]}
 
-function gridmove_Mover_canMove__P291753_mk(s) {
+function gridmove_Mover_canMove__P295120_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: gridmove_Mover_canMove__P291753, depth: s.depth + 1,
+        parent: s, fn: gridmove_Mover_canMove__P295120, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
   tmp_2: undefined,
-  neighbor___291858: undefined,
+  neighbor___295227: undefined,
   arg0: undefined,
   arg1: undefined,
 } }
@@ -39843,7 +39843,7 @@ function tiles_getTileLocation__P254692_mk(s) {
 
 
 
-function gridmove_Mover_updatePlayerControl__P291752(s) {
+function gridmove_Mover_updatePlayerControl__P295119(s) {
 let r0 = s.r0, step = s.pc;
 s.pc = -1;
 
@@ -39858,7 +39858,7 @@ switch (step) {
       s.lambdaArgs = null;
     }
     r0 = s.arg0;
-    if (!checkSubtype(r0, gridmove_Mover__C291751_VT)) failedCast(r0);
+    if (!checkSubtype(r0, gridmove_Mover__C295118_VT)) failedCast(r0);
     r0 = s.arg0.fields["_playerControl"];
     s.tmp_2 = r0;
     r0 = pxsim_numops_toBoolDecr(s.tmp_2);
@@ -39936,18 +39936,88 @@ switch (step) {
     return leave(s, r0)
   default: oops()
 } } }
-gridmove_Mover_updatePlayerControl__P291752.info = {"start":1658,"length":654,"line":72,"column":8,"endLine":93,"endColumn":9,"fileName":"gridmove.ts","functionName":"updatePlayerControl","argumentNames":["this"]}
+gridmove_Mover_updatePlayerControl__P295119.info = {"start":1658,"length":654,"line":72,"column":8,"endLine":93,"endColumn":9,"fileName":"gridmove.ts","functionName":"updatePlayerControl","argumentNames":["this"]}
 
-function gridmove_Mover_updatePlayerControl__P291752_mk(s) {
+function gridmove_Mover_updatePlayerControl__P295119_mk(s) {
     checkStack(s.depth);
     return {
-        parent: s, fn: gridmove_Mover_updatePlayerControl__P291752, depth: s.depth + 1,
+        parent: s, fn: gridmove_Mover_updatePlayerControl__P295119, depth: s.depth + 1,
         pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   tmp_0: undefined,
   tmp_1: undefined,
   tmp_2: undefined,
   tmp_3: undefined,
   tmp_4: undefined,
+  arg0: undefined,
+} }
+
+
+
+
+
+function gridmove_Mover_y__P295123(s) {
+let r0 = s.r0, step = s.pc;
+s.pc = -1;
+
+
+while (true) {
+if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) return null;
+switch (step) {
+  case 0:
+
+    if (s.lambdaArgs) {
+      s.arg0 = (s.lambdaArgs[0]);
+      s.lambdaArgs = null;
+    }
+    r0 = s.arg0;
+    if (!checkSubtype(r0, gridmove_Mover__C295118_VT)) failedCast(r0);
+    r0 = s.arg0.fields["_y"];
+    return leaveAccessor(s, r0)
+  default: oops()
+} } }
+gridmove_Mover_y__P295123.info = {"start":5682,"length":54,"line":188,"column":8,"endLine":190,"endColumn":9,"fileName":"gridmove.ts","functionName":"y","argumentNames":["this"]}
+gridmove_Mover_y__P295123.isGetter = true;
+
+function gridmove_Mover_y__P295123_mk(s) {
+    checkStack(s.depth);
+    return {
+        parent: s, fn: gridmove_Mover_y__P295123, depth: s.depth + 1,
+        pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
+  arg0: undefined,
+} }
+
+
+
+
+
+function gridmove_Mover_x__P295122(s) {
+let r0 = s.r0, step = s.pc;
+s.pc = -1;
+
+
+while (true) {
+if (yieldSteps-- < 0 && maybeYield(s, step, r0) || runtime !== pxsim.runtime) return null;
+switch (step) {
+  case 0:
+
+    if (s.lambdaArgs) {
+      s.arg0 = (s.lambdaArgs[0]);
+      s.lambdaArgs = null;
+    }
+    r0 = s.arg0;
+    if (!checkSubtype(r0, gridmove_Mover__C295118_VT)) failedCast(r0);
+    r0 = s.arg0.fields["_x"];
+    return leaveAccessor(s, r0)
+  default: oops()
+} } }
+gridmove_Mover_x__P295122.info = {"start":5543,"length":54,"line":182,"column":8,"endLine":184,"endColumn":9,"fileName":"gridmove.ts","functionName":"x","argumentNames":["this"]}
+gridmove_Mover_x__P295122.isGetter = true;
+
+function gridmove_Mover_x__P295122_mk(s) {
+    checkStack(s.depth);
+    return {
+        parent: s, fn: gridmove_Mover_x__P295122, depth: s.depth + 1,
+        pc: 0, retval: undefined, r0: undefined, overwrittenPC: false, lambdaArgs: null,
   arg0: undefined,
 } }
 
@@ -42939,7 +43009,7 @@ const Math_FastRandom__C254984_VT = mkVTable({
     "pickRandom": Math_FastRandom_pickRandom__P254989,
   },
 });
-const gridmove_Mover__C291751_VT = mkVTable({
+const gridmove_Mover__C295118_VT = mkVTable({
   name: "Mover",
   numFields: 11,
   classNo: 21,
@@ -42970,16 +43040,18 @@ const gridmove_Mover__C291751_VT = mkVTable({
     "set/_vy": null,
     "_loc": null,
     "set/_loc": null,
-    "update": gridmove_Mover_update__P291744,
-    "updatePlayerControl": gridmove_Mover_updatePlayerControl__P291752,
-    "canMove": gridmove_Mover_canMove__P291753,
-    "updateMovement": gridmove_Mover_updateMovement__P291754,
-    "setSpeed": gridmove_Mover_setSpeed__P291756,
-    "setPlayerControl": gridmove_Mover_setPlayerControl__P291757,
-    "setMode": gridmove_Mover_setMode__P291758,
+    "update": gridmove_Mover_update__P295111,
+    "updatePlayerControl": gridmove_Mover_updatePlayerControl__P295119,
+    "canMove": gridmove_Mover_canMove__P295120,
+    "updateMovement": gridmove_Mover_updateMovement__P295121,
+    "x": gridmove_Mover_x__P295122,
+    "y": gridmove_Mover_y__P295123,
+    "setSpeed": gridmove_Mover_setSpeed__P295125,
+    "setPlayerControl": gridmove_Mover_setPlayerControl__P295126,
+    "setMode": gridmove_Mover_setMode__P295127,
   },
 });
-const gridmove_MoverManager__C291722_VT = mkVTable({
+const gridmove_MoverManager__C295089_VT = mkVTable({
   name: "MoverManager",
   numFields: 1,
   classNo: 22,
@@ -42990,8 +43062,8 @@ const gridmove_MoverManager__C291722_VT = mkVTable({
   iface: {
     "_movers": null,
     "set/_movers": null,
-    "init": gridmove_MoverManager_init__P291723,
-    "createMover": gridmove_MoverManager_createMover__P291724,
+    "init": gridmove_MoverManager_init__P295090,
+    "createMover": gridmove_MoverManager_createMover__P295091,
   },
 });
 const sprites_BaseSprite__C254019_VT = mkVTable({
@@ -44197,5 +44269,5 @@ const sprites_BaseSpriteSayRenderer__C254184_VT = mkVTable({
 
 const breakpoints = setupDebugger(1, ["myMover___256289"])
 
-return _main___P292299
+return _main___P295678
 })
