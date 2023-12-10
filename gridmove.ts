@@ -178,6 +178,18 @@ namespace gridmove {
             this._vy = this._sprite.vy
         }
 
+        //% blockSetVariable="mySprite"
+        //% blockCombine block="x"
+        get x(): number {
+            return this._x
+        }
+
+        //% blockSetVariable="mySprite"
+        //% blockCombine block="y"
+        get y(): number {
+            return this._y
+        }
+
         //% blockId=gridmove_request_direction
         //% group="Movement" weight=100
         //% block="set $this request to $request"
