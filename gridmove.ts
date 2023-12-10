@@ -291,6 +291,15 @@ namespace gridmove {
         public cameraFollow() {
             scene.cameraFollowSprite(this._sprite)
         }
+
+        //% blockId=gridmove_destory
+        //% group="Create" weight=70
+        //% block="destroy $this"
+        //% this.defl=myMover
+        public destroy() {
+            this._sprite.destroy()
+            this._sprite = null
+        }
     }
 
     //% blockId=gridmove_create
