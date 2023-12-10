@@ -3,11 +3,13 @@
 
 > Open this page at [https://spinglass.github.io/pxt-arcade-gridmove/](https://spinglass.github.io/pxt-arcade-gridmove/)
 
-## Usage 
+## Blocks 
 
-### ``create``
+### Create
 
-Use the ``create`` block to allow Grid Move to control a Sprite
+#### ``create``
+
+Allow Grid Move to control a Sprite
 
 ```blocks
 let mySprite = sprites.create(img`
@@ -19,9 +21,9 @@ let mySprite = sprites.create(img`
 let myMover = gridmove.create(mySprite)
 ```
 
-### ``place``
+#### ``place``
 
-Use the ``place`` block to reset the move on a getTileLocation
+Reset the mover on a tile location.
 
 ```blocks
 // @hide
@@ -33,9 +35,11 @@ let myMover = gridmove.create(mySprite)
 myMover.place(tiles.getTileLocation(1, 1))
 ```
 
-### ``setPlayerControl``
+### Movement
 
-Use the ``setPlayerControl`` block to enable or disable control of the mover with buttons
+#### ``setPlayerControl``
+
+Enable or disable control of the mover with buttons.
 
 ```blocks
 // @hide
@@ -47,9 +51,9 @@ let myMover = gridmove.create(mySprite)
 myMover.setPlayerControl(true)
 ```
 
-### ``setSpeed``
+#### ``setSpeed``
 
-Use the ``setSpeed`` block to set the speed for a mover
+Set the speed for a mover when not stopped.
 
 ```blocks
 // @hide
@@ -61,12 +65,12 @@ let myMover = gridmove.create(mySprite)
 myMover.setSpeed(100)
 ```
 
-### ``setMode``
+#### ``setMode``
 
-Use the ``setMode`` block determine how the mover behaves
-- ``Step`` : moves one grid square at a time, unless a direction is held
-- ``Continuous`` : only stops when direction of travel is blocked
-- ``WallStop`` : like continuous, except the user can turn into a wall to stop
+Determine how the mover behaves
+- _Step_ : moves one grid square at a time, unless a direction is held
+- _Continuous_ : only stops when direction of travel is blocked
+- _WallStop_ : like continuous, except the user can turn into a wall to stop
 
 ```blocks
 // @hide
@@ -78,9 +82,9 @@ let myMover = gridmove.create(mySprite)
 myMover.setMode(gridmove.Mode.Step)
 ```
 
-### ``setFreeze``
+#### ``setFreeze``
 
-Use the ``setFreeze`` block to pause or unpause the mover immediately.
+Immediately pause or unpause the mover.
 
 ```blocks
 // @hide
