@@ -71,7 +71,9 @@ namespace gridmove {
                 return
             }
 
-            this._request = Direction.None
+            if (this._mode == Mode.Step) {
+                this._request = Direction.None
+            }
 
             if (controller.up.isPressed()) {
                 this._request = Direction.Up
@@ -168,6 +170,15 @@ namespace gridmove {
 
             this._x = this._sprite.x
             this._y = this._sprite.y
+        }
+
+        //% blockId=gridmove_request_direction
+        //% group="Movement"
+        //% block="request $this to move $request"
+        //% this.defl=myMover
+        //% request.defl=Direction.None
+        public requestDirection(request: Direction) {
+            this._request = request;
         }
 
         //% blockId=gridmove_set_speed
